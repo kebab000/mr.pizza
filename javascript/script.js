@@ -83,20 +83,20 @@ window.onload = function(){
             },700)
         }
     }, 3000);
-    // const chainPrev = document.querySelector(".chains__btn__prev")
-    // const chainNext = document.querySelector(".chains__btn__next")
-    // let chainIndex = 0
-    // chainNext.addEventListener("click",()=>{
-    //     if(chainIndex==2){
-    //         chainIndex = 0
-    //     }else {
-    //         chainIndex++
-    //     }
-    //     document.querySelector(".chains__wrap").style.transform = "translateX("+ -100 * chainIndex +"%)"
-    //     document.querySelector(".chains__wrap").style.transition = "all 0.6s"
-    //     console.log(chainIndex)
+    const chainPrev = document.querySelector(".chains__btn__prev")
+    const chainNext = document.querySelector(".chains__btn__next")
+    let chainIndex = 0
+    chainNext.addEventListener("click",()=>{
+        if(chainIndex==2){
+            chainIndex = 0
+        }else {
+            chainIndex++
+        }
+        document.querySelector(".chains__wrap").style.transform = "translateX("+ -770.39 * chainIndex +"px)"
+        document.querySelector(".chains__wrap").style.transition = "all 0.6s"
+        console.log(chainIndex)
 
-    // })
+    })
     // chainPrev.addEventListener("click",()=>{
     //     if(chainIndex==0){
     //         chainIndex = 2

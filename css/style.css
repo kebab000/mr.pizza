@@ -174,8 +174,6 @@ img {
     width: 400%;
     flex-wrap: nowrap;
 }
-#slider .slider__wrap .slider {
-}
 #slider .slider__wrap .slider img {
     width: 100%;
 }
@@ -207,6 +205,7 @@ img {
     width: 48%;
 }
 #cards .slider__min {
+    border-radius: 30px;
     position: relative;
     overflow: hidden;
 }
@@ -230,6 +229,8 @@ img {
 #cards .chains {
     position: relative;
     overflow: hidden;
+    border-radius: 30px;
+
 }
 #contents #cards .chains .chains__wrap {
     width: 300%;
