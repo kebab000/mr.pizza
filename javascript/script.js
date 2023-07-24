@@ -97,16 +97,16 @@ window.onload = function(){
         console.log(chainIndex)
 
     })
-    // chainPrev.addEventListener("click",()=>{
-    //     if(chainIndex==0){
-    //         chainIndex = 2
-    //     }else {
-    //         chainIndex--
-    //     }
-    //     document.querySelector(".chains__wrap").style.transform = "translateX("+ -100 * chainIndex +"%)"
-    //     document.querySelector(".chains__wrap").style.transition = "all 0.6s"
-    //     console.log(chainIndex)
-    // })
+    chainPrev.addEventListener("click",()=>{
+        if(chainIndex==0){
+            chainIndex = 2
+        }else {
+            chainIndex--
+        }
+        document.querySelector(".chains__wrap").style.transform = "translateX("+ -770.39 * chainIndex +"px)"
+        document.querySelector(".chains__wrap").style.transition = "all 0.6s"
+        console.log(chainIndex)
+    })
     // const couponPrev = document.querySelector(".coupon__btn__prev")
     // const couponNext = document.querySelector(".coupon__btn__next")
     // const couponWrap = document.querySelector(".coupons__wrap")

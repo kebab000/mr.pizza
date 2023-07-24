@@ -252,6 +252,9 @@ img {
     border: 0;
     background-image: url(../images/slide_prev.png);
 }
+.chains__btn__prev:hover {
+    cursor: pointer;
+}
 .chains__btn__next {
     position: absolute;
     right: 0;
@@ -260,6 +263,9 @@ img {
     height: 50px;
     border: 0;
     background-image: url(../images/slide_next.png);
+}
+.chains__btn__next:hover {
+    cursor: pointer;
 }
 /* coupons */
 #coupons {
