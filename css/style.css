@@ -319,6 +319,9 @@ img {
     font-size: 45px;
     color: #e20c3e;
 }
+#coupons button {
+    background-color: inherit;
+}
 .coupon__btn__prev {
     position: absolute;
     left: 130px;
