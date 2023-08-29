@@ -57,7 +57,7 @@ window.onload = function(){
     setInterval(() => {
         minImgIndex++
         let minImgWidth = minSlider.cllientWidth
-        minSliderWrap.style.transform = "translateX("+ -770.39 * minImgIndex +"px)"
+        minSliderWrap.style.transform = "translateX("+ -38 * minImgIndex +"vw)"
         minSliderWrap.style.transition = "all 0.6s"
         if(minImgIndex == 1){
             minSliderDot.forEach((el)=>{
@@ -85,6 +85,7 @@ window.onload = function(){
     }, 3000);
     const chainPrev = document.querySelector(".chains__btn__prev")
     const chainNext = document.querySelector(".chains__btn__next")
+
     let chainIndex = 0
     chainNext.addEventListener("click",()=>{
         if(chainIndex==2){
@@ -92,9 +93,9 @@ window.onload = function(){
         }else {
             chainIndex++
         }
-        document.querySelector(".chains__wrap").style.transform = "translateX("+ -770.39 * chainIndex +"px)"
+        document.querySelector(".chains__wrap").style.transform = "translateX("+ -38 * chainIndex +"vw)"
         document.querySelector(".chains__wrap").style.transition = "all 0.6s"
-        console.log(chainIndex)
+        console.log(pageWidth* 0.48)
 
     })
     chainPrev.addEventListener("click",()=>{
@@ -103,39 +104,10 @@ window.onload = function(){
         }else {
             chainIndex--
         }
-        document.querySelector(".chains__wrap").style.transform = "translateX("+ -770.39 * chainIndex +"px)"
+        document.querySelector(".chains__wrap").style.transform = "translateX("+ -38 * chainIndex +"vw)"
         document.querySelector(".chains__wrap").style.transition = "all 0.6s"
         console.log(chainIndex)
     })
-    // const couponPrev = document.querySelector(".coupon__btn__prev")
-    // const couponNext = document.querySelector(".coupon__btn__next")
-    // const couponWrap = document.querySelector(".coupons__wrap")
-    // const couponClone = couponWrap.firstElementChild.cloneNode(true)
-    // couponWrap.appendChild(couponClone)
-    // let couponIndex = 0
-    // couponNext.addEventListener("click",()=>{
-    //     if(couponIndex==5){
-    //         const couponClone = couponWrap.firstElementChild.cloneNode(true)
-    //         couponWrap.appendChild(couponClone)
-    //         couponIndex++
-    //     }else {
-    //         couponIndex++
-    //     }
-    //     document.querySelector(".chains__wrap").style.transform = "translateX("+ -574.55 * chainIndex +"px)"
-    //     document.querySelector(".chains__wrap").style.transition = "all 0.6s"
-    //     console.log(chainIndex)
-
-    // })
-    // chainPrev.addEventListener("click",()=>{
-    //     if(chainIndex==0){
-    //         chainIndex = 2
-    //     }else {
-    //         chainIndex--
-    //     }
-    //     document.querySelector(".chains__wrap").style.transform = "translateX("+ -574.55 * chainIndex +"px)"
-    //     document.querySelector(".chains__wrap").style.transition = "all 0.6s"
-    //     console.log(chainIndex)
-    // })
 
 
 }
